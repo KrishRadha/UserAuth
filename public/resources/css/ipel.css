@@ -1,0 +1,42 @@
+/* Author : K.RADHA KRISHNA */
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+a.header_but:hover {
+
+    color:#e74c3c;
+    text-decoration: none;
+    
+}
+
+a.heading {
+    color: #d35400;
+    text-decoration: none;
+    
+}
+
+a.header_butt:hover {
+
+    color:black;
+    text-decoration: none;
+    
+}
+
+#png1 {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+#png2 {
+    position:absolute;
+    /*
+    set top and left here
+    */
+    z-index:1;
+}

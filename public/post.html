@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html ng-app="post_app">
+
+
+
+
+<head>
+    
+    <title> Write </title>
+    <link rel="stylesheet" href="resources/css/respstrap.css" type="text/css">
+        
+ <link rel="stylesheet" href="resources/css/ipel.css" type="text/css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+        <script src="resources/js/angular.js" ></script>
+        <script src="controllers/post_cont.js"></script>
+         <script src="resources/js/jquery.js" ></script>
+    
+</head>
+
+    <body style="background-color:black" ng-controller="PostCont">
+        
+        <!-- ------------------------------------------------- HEADER ------------------------------------------------->
+    
+     <div class="row" align="center" style="display:float-left;color:#d35400;font-size:60px;font-family: 'Fredoka One', cursive;">
+            <div class="col-md-1"></div>
+         <div class="col-md-2" ><img style="margin-left:170px;" class="img-responsive" src="resources/images/650logo.png"/></div>
+          <div class="col-md-6"><a class="heading" href="index.html">  INDIAN PANTHER   <div style="font-size:40px;">The Democratic Media!
+            </div></a></div>
+         <div class="col-md-3"></div>
+         
+            
+        </div>
+        <!-------------------------------------------------------- done header--------------------------------------------->
+        <hr/>
+        <div class="container">
+        <div class="well" align="center" style="background-color:#27ae60;">
+        <h4><strong>Be Responsible, Be Informative, Be Challenging and Demanding.
+            Speak what you want so that the World can get Informed!</strong></h4>
+        </div>
+            </div>
+        <!------------------------------------------------ WYSIWIG -------------------------------------------------->
+        
+        <hr/>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                <h4 style="color:white"> Type in the Youtube Video link of the Story:</h4>
+                </div>
+                <div class="col-md-7">
+        <input  type="text" class="form-control" ng-model="post.youtube" placeholder="Youtube Video Link" /></div>
+                
+                </div>
+            
+            <hr/>
+            
+            <div class="row">
+                 <div class="col-md-5">
+                <h4 style="color:white"> Now type your name/ Pen name (for Being Anonymous)</h4>
+                </div>
+                <div class="col-md-7">
+                    <input  type="text" ng-model="post.author" class="form-control" placeholder="Your Name/ Pen Name" /></div>
+            </div>
+            
+            <hr/>
+            <div class="row">
+                 <div class="col-md-6">
+                <h4 style="color:white"> Select a Suitable Tag which your story represents:</h4>
+                </div>
+                 <div class="col-md-6">
+            <select ng-model="post.tag" id="dyn_select" class="form-control">
+  
+                     </select></div>
+        </div>
+        </div>
+        
+        <hr/>
+        <div align="center">
+        <button  ng-click="PostLink()" class="btn btn-primary btn-lg" > SUBMIT</button>
+            </div>
+        <!--------------------------------------------------------------------------------------------------------------->
+    
+    <script src="resources/js/respstrap.js" ></script>
+    </body>
+
+
+
+</html>
