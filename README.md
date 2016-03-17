@@ -2,7 +2,7 @@
 
 ##How to use? Well You got to have a basic understanding of Nodejs, its not a WYSIWIG for sure!
 
-###Following are the ideal steps to use this
+###Following are the ideal steps to use this(Server_prime.js is the actual server module)
 
 * FIRST STEP : CHANGE THE APP SECRET OF SESSIONS under app.use(sessions)
 * Any app starts from a / get, so go to that and change the landing page of ur website
