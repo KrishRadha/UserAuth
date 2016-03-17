@@ -25,6 +25,45 @@ module.exports = {
       
       
       return year+month+day+hour+min+sec;
-  }
+  },
+    
+    
+RandStr:function(len)
+    {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567891234567890!@#$%^&*";
+
+    for( var i=0; i < len; i++ )
+        text =text+ possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+
+    },
+    
+TagSep:function(str)
+    {
+    
+    var len=str.length;
+        var rez=[];
+        var indexlog=0;
+        rez[indexlog]='';
+        for(var i=0;i<len;i++)
+        {
+            
+            if(str[i]==',')
+            {
+                indexlog++;
+                rez[indexlog]='';
+            }
+            else{
+                rez[indexlog]=rez[indexlog]+str[i];
+            }
+        }
+        
+        return rez;
+    
+    
+    }
+ 
  
 };

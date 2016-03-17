@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+
+<html ng-app="post_app">
+
+<head>
+     
+       <title> Home </title>
+            <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="resources/css/respstrap.css" type="text/css">
+        <link rel="stylesheet" href="resources/css/ipel.css" type="text/css">
+    
+    
+      <script src="resources/js/angular.js" ></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <!-- JQUERY-->
+        <script src="resources/js/jquery.js" ></script>
+       <script src="resources/js/respstrap.js" ></script>
+    <script src="controllers/post_controll.js" ></script>
+     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+  <script src="resources/js/security.js"></script>
+    </head>
+<body style="background-color:black;">
+     
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+         
+          <!-- ------------------------------------------------- HEADER ------------------------------------------------->
+    
+     <div class="row" align="center"  ng-model="post" style="display:float-left;color:#d35400;font-size:60px;font-family: 'Fredoka One', cursive;">
+            <div class="col-md-1"></div>
+         <div class="col-md-2" ><img style="margin-left:170px;" class="img-responsive" src="resources/images/650logo.png"/></div>
+          <div class="col-md-6"><a class="heading" href="index.html">  INDIAN PANTHER   <div style="font-size:40px;">The Democratic Media!
+            </div></a></div>
+         <div class="col-md-3"></div>
+         
+            
+        </div>
+        <!-------------------------------------------------------- done header--------------------------------------------->
+        <!-------------------------------------------------------- Post starts--------------------------------------------->
+    <form ng-controller="PostCont">
+         <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+    <div class="row">
+        
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+    <h3 class="panel-title" align="center"> Write a Story. </h3>
+  </div>
+        <div class="panel-body" style="background-color:#3498db;">
+            <label> Write an Apt Head Line to the Story here</label>
+        <input type="text" ng-model="post.head" class="form-control" id="texthead"  placeholder="Heading here"/>
+            <br/>
+            <label> Write your story/challenge/media here</label>
+        <div id="summernotes"  placeholder="Enter Your Story Here"></div><br/>
+            <label> Set a Feature Image by giving the URL</label>
+            <input type="text" ng-model="post.featurl" class="form-control" id="texttags"   placeholder="URL of the feature image here"/>
+            <br/>
+            <label> Give some apt tags to your story</label>
+            <input type="text" class="form-control" id="texttags" ng-model="post.tags"   placeholder="Enter Tags here seperated by comma"/>
+        </div>
+    
+  <div id="error_post_box"></div>
+  <div class="panel-footer" align="center" style="background-color:#3498db">
+        <button class="btn btn-primary" ng-click="PostNow()" type="button">
+  Post the Story Now!
+</button>
+        </div>
+</div>
+        
+        </div>
+        
+        <div class="col-md-2"></div>
+    </div>
+    <textarea style="display:none;" ng-model="post.matter" id="handlesummer"></textarea>
+    </form>
+    
+    
+    <script>
+    $(document).ready(function() {
+        $('#summernotes').summernote('');
+    });
+        
+      
+  </script>
+    <!-------------------------------------------------------- end row post--------------------------------------------->
+    </body>
+
+
+
+</html>

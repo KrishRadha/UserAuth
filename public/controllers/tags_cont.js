@@ -40,6 +40,7 @@ tagsapp.controller('TagsCont',['$scope','$http', '$compile','$sce',
                            
     function TagsCont($scope,$http,$compile,$sce){
               
+              
          console.log("tags_controller_working");
          
           $scope.trustSrc = function(src) {

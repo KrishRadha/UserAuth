@@ -1,5 +1,10 @@
 /* Author : K.RADHA KRISHNA */
 
+body{
+
+background-color: black;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -39,4 +44,17 @@ a.header_butt:hover {
     set top and left here
     */
     z-index:1;
+}
+
+.image-tab
+{
+    border:1px solid red;
+    margin-left: 30px;
+    height:400px;
+    width:800px;
+}
+.pop-resp
+{
+    border:1px solid green;
+     height:450px;
 }

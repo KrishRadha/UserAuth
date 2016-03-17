@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'passportjs' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose cache add [ 'passportjs', null ]
+5 verbose cache add name=undefined spec="passportjs" args=["passportjs",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'passportjs',
+6 verbose parsed url   path: 'passportjs',
+6 verbose parsed url   href: 'passportjs' }
+7 silly lockFile 8dbf0c64-passportjs passportjs
+8 verbose lock passportjs C:\Users\lenovo\AppData\Roaming\npm-cache\8dbf0c64-passportjs.lock
+9 silly lockFile 8dbf0c64-passportjs passportjs
+10 silly lockFile 8dbf0c64-passportjs passportjs
+11 verbose addNamed [ 'passportjs', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 833866c0-passportjs passportjs@
+14 verbose lock passportjs@ C:\Users\lenovo\AppData\Roaming\npm-cache\833866c0-passportjs.lock
+15 silly addNameRange { name: 'passportjs', range: '*', hasData: false }
+16 verbose request where is /passportjs
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id a5a440f2895a3a34
+19 verbose url raw /passportjs
+20 verbose url resolving [ 'https://registry.npmjs.org/', './passportjs' ]
+21 verbose url resolved https://registry.npmjs.org/passportjs
+22 verbose request where is https://registry.npmjs.org/passportjs
+23 info trying registry request attempt 1 at 15:23:20
+24 http GET https://registry.npmjs.org/passportjs
+25 http 404 https://registry.npmjs.org/passportjs
+26 silly registry.get cb [ 404,
+26 silly registry.get   { 'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=0',
+26 silly registry.get     'content-length': '2',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Wed, 17 Feb 2016 09:53:21 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-sin6926-SIN',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1455702801.611495,VS0,VE216' } ]
+27 silly lockFile 833866c0-passportjs passportjs@
+28 silly lockFile 833866c0-passportjs passportjs@
+29 error 404 Not Found
+29 error 404
+29 error 404 'passportjs' is not in the npm registry.
+29 error 404 You should bug the author to publish it
+29 error 404
+29 error 404 Note that you can also install from a
+29 error 404 tarball, folder, or http url, or git url.
+30 error System Windows_NT 6.2.9200
+31 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "passportjs"
+32 error cwd c:\users\lenovo\desktop\node\ip
+33 error node -v v0.10.36
+34 error npm -v 1.4.28
+35 error code E404
+36 verbose exit [ 1, true ]

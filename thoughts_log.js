@@ -24,4 +24,46 @@ A Social Network Can't be?
 Education/ But how to Solve it duh
 
 
+
+
+Discussion Makes it a lot simpler. THERE are deep flaws in the essence of the Text NEWS Platforms.Quora made it. 
+
+
+
+
+/* SENDGRID SAMPLE *
+ sendgrid.send(
+        {
+            to:'rkavulru@gmail.com',
+            from:'test@mail.indianpanther.com',
+            subject:'Indian Panther Admin test',
+            text:'Let us see if we can send stuff using sendgrid to validate users email id'
+        },function(err,json){
+        
+        if(err){return res.send('Ah error in sending');}
+            res.send('SENT DUDE');
+        
+        }
+        );
+
+/*-------------------------*/
+
+/* image exists url *
+
+function imageExists(url, callback) {
+  var img = new Image();
+  img.onload = function() { callback(true); };
+  img.onerror = function() { callback(false); };
+  img.src = url;
+}
+
+// Sample usage
+var imageUrl = 'http://www.google.com/images/srpr/nav_logo14.png';
+imageExists(imageUrl, function(exists) {
+  console.log('RESULT: url=' + imageUrl + ', exists=' + exists);
+});
+
+*/
+
+
  
