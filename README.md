@@ -4,6 +4,7 @@
 
 ###Following are the ideal steps to use this
 
+* FIRST STEP : CHANGE THE APP SECRET OF SESSIONS under app.use(sessions)
 * Any app starts from a / get, so go to that and change the landing page of ur website
 * Now, go to register get and change the values you want to get from the user, also focus on changing the view of register. Samples have been attached though (done using Angular)
 * Validate each field using Validate JS
