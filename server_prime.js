@@ -7,7 +7,30 @@
 /* ---------------------------------------------------INSERT HEADING HERE------------------------------------------------------------------*/
 
 
+// ------------------ TO CHANGE BEFORE USE
 
+/*
+
+1) SENDGRID USERNAME AND PASSWORD ( FOR EMAIL VERIFICATION )
+2) CUSTOMIZE THE REGISTER FOR WHAT EVER DETAILS YOU WANT ON REGISTRATION
+3) LOGIN REQUIRES EMAIL AND PW , CHANGE IF U WANT ANY
+
+  
+  
+*/
+
+
+// Available GETS 
+
+/*
+
+1) /login
+2) /logout
+3) /dashboard
+4) /register
+5) /verify
+6) /
+7)
 
 
 
@@ -30,7 +53,11 @@ var sessions=require('client-sessions');
 var bcrypt=require('bcryptjs');
 var csrf=require('csurf');
 // c surf is the sessions library we are using to store the users sessions on the local browser/ iTS WRITTERN by mozilla i guesss
-//var sendgrid=require('sendgrid')('champrakri','Iamthegod1');
+
+
+//var sendgrid=require('sendgrid')('USERNAME','PASSWORD');
+
+
 //var passport=require('passport');
 //var mongoose=require('mongoose');
 //mongoose.connect('mongodb://localhost/indianpanther');
